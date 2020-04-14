@@ -68,12 +68,12 @@ def csvstr_to_dicts(csvstr):
 
 def dumps_json(file_name: str, json_data: Dict):
     # 日本語文字化け対策などを施したdump jsonキット
-    with codecs.open("./docs/" + file_name, "w", "utf-8") as f:
+    with codecs.open("./data/" + file_name, "w", "utf-8") as f:
         f.write(json.dumps(json_data, ensure_ascii=False,
                            indent=4, separators=(',', ': ')))
 
 
-os.makedirs('./docs', exist_ok=True)
+os.makedirs('./data', exist_ok=True)
 for remotes in REMOTE_SOURCES:
     data = import_csv_from(remotes['url'])
     dumps_json(remotes['jsonname'], data)

@@ -18,6 +18,7 @@ json_data = {}
 
 REMOTE_SOURCES = settings.REMOTE_SOURCES  # 外部ファイルの参照設定
 CODECS = settings.CODECS  # ファイルエンコーディングリスト
+UNUSE_CHARACTER = settings.UNUSE_CHARACTER
 
 
 def import_csv_from(csvurl):
@@ -54,6 +55,10 @@ def csvstr_to_dicts(csvstr):
     datas = []
     rows = [row for row in csv.reader(csvstr.splitlines())]
     header = rows[0]
+    for i in range(len(header)):
+        for j in range(len(UNUSE_CHARACTER)):
+            header[i] = header[i].replace(UNUSE_CHARACTER[j], '')
+
     maindatas = rows[1:]
     for d in maindatas:
         # 空行はスキップ

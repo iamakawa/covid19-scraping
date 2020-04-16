@@ -1,4 +1,4 @@
-![Python application](https://github.com/iamakawa/covid19-scraping/workflows/Deploy%20JSON%20Files/badge.svg)
+![Python application](https://github.com/CODE-for-GIFU/covid19-scraping/workflows/Deploy%20JSON%20Files/badge.svg)
 
 ## What is this
 岐阜県が公開するオープンデータカタログサイトをスクレイピングし、jsonファイルを出力するpythonスクリプトです。

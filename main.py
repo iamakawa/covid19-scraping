@@ -5,6 +5,7 @@ import csv
 import codecs
 
 import datetime
+import dateutil.parser
 import os
 import urllib.request
 
@@ -29,10 +30,12 @@ def import_csv_from(csvurl):
     f = decode_csv(request_file.read())
     filename = os.path.splitext(os.path.basename(csvurl))[0]
     datas = csvstr_to_dicts(f)
+    timestamp = (request_file.getheader('Last-Modified'))
 
     return {
         'data': datas,
-        'last_update': datetime.datetime.now(JST).isoformat()
+        # 'last_update': datetime.datetime.now(JST).isoformat()
+        'last_update': dateutil.parser.parse(timestamp).astimezone(JST).isoformat()
     }
 
 

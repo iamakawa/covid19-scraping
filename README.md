@@ -7,9 +7,10 @@
 ## Specification
 #### main.py
 - main.pyを実行すると、
-  - ①settings.pyのREMOTE_SOURCESに基づきcsvデータを取得し、
-  - ②importフォルダ内のcsvを読み込んで、それら全てのデータのjsonファイルを出力します
-- このスクリプトでは、1つのCSVが1つのJSONに対応します（last_updateをのぞく）
+  - settings.pyのREMOTE_SOURCESに基づきcsvデータを取得し、
+  - importフォルダ内のcsvを読み込んで、それら全てのデータのjsonファイルを出力します
+  - last_updateはファイルの最終更新日付です。
+- このスクリプトでは、1つのCSVが1つのJSONに対応します
 - csvのキーに「・」「_」がある場合は出力しません
 
 ## 出力されるデータ

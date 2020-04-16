@@ -27,3 +27,6 @@ GitHub Actionsにより10分に一度、すべてjson類をgh-pagesブランチ�
 ## 外部からのアクセス
 gh-pagesブランチにあるjsonデータに直接アクセスしてデータを読み出す事が出来ます。
 
+## ref
+https://qiita.com/iori_ama/items/6cc8f4162b52387e4a46
+

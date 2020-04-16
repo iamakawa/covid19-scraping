@@ -4,6 +4,11 @@
 岐阜県が公開するオープンデータカタログサイトをスクレイピングし、jsonファイルを出力するpythonスクリプトです。
 (https://data.gifu-opendata.pref.gifu.lg.jp/dataset/c11223-001)
 
+## ローカル環境での実行
+```
+pip install -r requirements.txt
+python3 main.py
+```
 ## Specification
 #### main.py
 - main.pyを実行すると、

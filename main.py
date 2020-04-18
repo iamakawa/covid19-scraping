@@ -21,7 +21,6 @@ REMOTE_SOURCES = settings.REMOTE_SOURCES  # 外部ファイルの参照設定
 CODECS = settings.CODECS  # ファイルエンコーディングリスト
 UNUSE_CHARACTER = settings.UNUSE_CHARACTER
 
-
 def import_csv_from(csvurl):
     request_file = urllib.request.urlopen(csvurl)
     if not request_file.getcode() == 200:
@@ -38,7 +37,6 @@ def import_csv_from(csvurl):
         'last_update': dateutil.parser.parse(timestamp).astimezone(JST).isoformat()
     }
 
-
 def decode_csv(csv_data):
     print('csv decoding')
     for codec in CODECS:
@@ -52,8 +50,6 @@ def decode_csv(csv_data):
     print('Appropriate codec is not found.')
 
 # CSV文字列を[dict]型に変換
-
-
 def csvstr_to_dicts(csvstr):
     datas = []
     rows = [row for row in csv.reader(csvstr.splitlines())]
@@ -73,13 +69,10 @@ def csvstr_to_dicts(csvstr):
         datas.append(data)
     return datas
 
-
 def dumps_json(file_name: str, json_data: Dict):
     # 日本語文字化け対策などを施したdump jsonキット
     with codecs.open("./data/" + file_name, "w", "utf-8") as f:
-        f.write(json.dumps(json_data, ensure_ascii=False,
-                           indent=4, separators=(',', ': ')))
-
+        f.write(json.dumps(json_data, ensure_ascii=False,indent=4, separators=(',', ': ')))
 
 os.makedirs('./data', exist_ok=True)
 for remotes in REMOTE_SOURCES:

@@ -25,6 +25,7 @@ python3 main.py
 |  検査実施件数 |  testcount  | [Link](https://data.gifu-opendata.pref.gifu.lg.jp/dataset/4661bf9d-6f75-43fb-9d59-f02eb84bb6e3/resource/f2468ba2-efe8-483f-9b1b-ee67755dedb0/download/210005gifucovid19testcount.csv) |  [testcount.json](http://code-for-gifu.github.io/covid19-scraping/testcount.json)  |
 |  健康相談窓口件数 |  callcenter  | [Link](https://data.gifu-opendata.pref.gifu.lg.jp/dataset/4661bf9d-6f75-43fb-9d59-f02eb84bb6e3/resource/aa3ebb23-5704-470f-a41e-d834d0a51fc0/download/210005gifucovid19callcenter.csv) |  [callcenter.json](http://code-for-gifu.github.io/covid19-scraping/callcenter.json)  |
 |  帰国者・接触者相談センター件数 |  advicecenter | [Link](https://data.gifu-opendata.pref.gifu.lg.jp/dataset/4661bf9d-6f75-43fb-9d59-f02eb84bb6e3/resource/b71cdec1-b763-4b67-9ff4-24deaea65a55/download/210005gifucovid19advicecenter.csv) |  [advicecenter.json](http://code-for-gifu.github.io/covid19-scraping/advicecenter.json)  |
+|  死亡患者属性 |  deceasedpatients | [Link](https://data.gifu-opendata.pref.gifu.lg.jp/dataset/4661bf9d-6f75-43fb-9d59-f02eb84bb6e3/resource/ff0a6fb9-483f-424b-9e68-5aa979af51b8/download/210005gifucovid19deceasedpatients.csv) |  [deceasedpatients.json](http://code-for-gifu.github.io/covid19-scraping/deceasedpatients.json)  |
 
 ## Scheduling
 GitHub Actionsにより10分に一度、すべてjson類をgh-pagesブランチに書き出します

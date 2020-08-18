@@ -19,7 +19,13 @@ REMOTE_SOURCES = [
         'url': 'https://data.gifu-opendata.pref.gifu.lg.jp/dataset/4661bf9d-6f75-43fb-9d59-f02eb84bb6e3/resource/b71cdec1-b763-4b67-9ff4-24deaea65a55/download/210005gifucovid19advicecenter.csv',
         'type': 'csv',
         'jsonname': 'advicecenter.json'
+    },
+    {
+        'url': 'https://data.gifu-opendata.pref.gifu.lg.jp/dataset/4661bf9d-6f75-43fb-9d59-f02eb84bb6e3/resource/ff0a6fb9-483f-424b-9e68-5aa979af51b8/download/210005gifucovid19deceasedpatients.csv',
+        'type': 'csv',
+        'jsonname': 'deceasedpatients.json'
     }
+
 ]
 # 先にある順にデコードされます
 CODECS = ['utf-8', 'cp932', 'shift_jis', 'euc_jp',
